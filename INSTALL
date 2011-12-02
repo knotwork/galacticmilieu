@@ -1,0 +1,75 @@
+============================================================
+INSTALL for GitHub-only portion of Galactic Milieu project
+============================================================
+
+This is a Git repository for a project much of which already
+exists on SourceForge.
+
+THIS IS NOT A COPY OF WHAT IS ON SOURCEFORGE.
+
+This will be assuming cron will be running "make"
+periodically and "make" will figure out, largely from last
+modified dates of files as is normal for "make", what to
+actually do (such as git pull and/or svn up...)
+
+WARNING!!! WARNING!!! WARNING!!! WARNING!!! WARNING!!!
+
+Does that sound safe/secure to you?!?!?!
+
+If so, please think again and/or harder!
+
+It is not! It is stupid to run this crap! Are you out of
+your mind!?!?!
+
+Oh sure I run it, why the heck not, I write it. Oh wait,
+no, I DO NOT RUN IT! Some other username on one of my
+machines runs it. A disempowered user. Nonetheless, even
+a disempowered user can do while fork or not fork fork
+or other trivial infinite loops to eat system resources.
+
+So don't run this crap, use it as inspiration to run
+your part of the project your way or something and don't
+blame me if you don't like what it does.
+
+WARNING!!! WARNING!!! WARNING!!! WARNING!!! WARNING!!!
+
+------------------------------------------------------------
+
+Initially I am just going to assume this will be run on a
+Linux box not much different from my own, and that any
+differences from my own are "somebody else's problem".
+
+------------------------------------------------------------
+
+My own happens to be a 64-bit Fedora Core 15 box at time of
+writing. In case you might have wondered.
+
+------------------------------------------------------------
+
+I am running Crossfire RPG, umpteen peer to peer crypto-
+coin daemons, a bunch of eggdrop IRC bots, and have Freeciv
+and Battle for Wesnoth installed but not actually running at
+this moment at time of writing.
+
+------------------------------------------------------------
+
+If you are running a similar box, you might be able to
+simply clone this github project and run "make", if I have
+actually included a Makefile by the tiem you read this.
+
+------------------------------------------------------------
+
+BUT SHEESH! ARE YOU FOOL ENOUGH TO ACTUALLY DO THAT?!?!
+
+If so, why not bite the whole biscuit: tell cron to do
+a make periodically. Hopefully it will be clever enough
+(someday anyway) to clue you in about doing that, if it
+is clever enough to figure out whether you already did it.
+
+The rest, as they say, will be history. Catastrophe? Fun?
+Merely an automated attempt to try to keep up with some
+aspects of the Galact Milieu? Run it -or "simply read
+the code"- and see, AT YOUR OWN RISK, AFTER DOING YOUR
+OWN DUE DILIGENCE, if at all.
+
+============================================================
