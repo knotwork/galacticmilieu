@@ -1,0 +1,63 @@
+============================================================
+README for GitHub-only portion of Galactic Milieu project
+============================================================
+
+This is a Git repository for a project much of which already
+exists on SourceForge.
+
+THIS IS NOT A COPY OF WHAT IS ON SOURCEFORGE.
+
+Rather, it is at least partly, and possibly mostly, a part
+of the runtime environment of the project in the sense that
+being able to pick up data from a central place at runtime
+can have its uses. Git and SVN were both considered for use
+in such roles, I (Mark Metson) merely happen to have started
+work on a Git based such resource first.
+
+Likely an SVN based such resource will also be made, quite
+likely based at SourceForge, when work on the Makefiles
+and scripts for this resource reaches a point where "if
+configured to use git, use the Github resource else if
+configured to use svn use the SourceForge SVN resource"
+becomes appropriate.
+
+------------------------------------------------------------
+
+This part of the project is loosely inspired by the "make
+Money" concept that MakeMoney Knotwork used to try to
+document. (See The Wayback Machine, makemoney.knotwork.com)
+
+That concept was, sinply enter the command "make money"
+and preto, it does its best to do so.
+
+This one is more along the lines of "play game" or
+"run game" with the word "play" and/or the word "run"
+being simply a euphemism/alias for "make".
+
+Thus I will be starting by assuming cron will be running
+"make" periodically and "make" will figure out, largely
+from last modified dates of files as is normal for "make",
+what to actually do (such as git pull and/or svn up...)
+
+WARNING!!! WARNING!!! WARNING!!! WARNING!!! WARNING!!!
+
+
+Does that sound safe/secure to you?!?!?!
+
+If so, please think again and/or harder!
+
+It is not! It is stupid to run this crap! Are you out of
+your mind!?!?!
+
+Oh sure I run it, why the heck not, I write it. Oh wait,
+no, I DO NOT RUN IT! Some other username on one of my
+machines runs it. A disempowered user. Nonetheless, even
+a disempowered user can do while fork or not fork fork
+or other trivial infinite loops to eat system resources.
+
+So don't run this crap, use it as inspiration to run
+your part of the project your way or something and don't
+blame me if you don't like what it does.
+
+WARNING!!! WARNING!!! WARNING!!! WARNING!!! WARNING!!!
+============================================================
