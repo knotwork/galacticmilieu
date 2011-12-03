@@ -1,0 +1,72 @@
+===========================================================
+DEPENDENCIES for GitHub-only portion of Galactic Milieu
+===========================================================
+
+This GitHub repo doesn't really have a whole lot that it
+itself plans to do itself. It is more of a "tying it all
+together" bundle.
+
+It depends upon git, for sure, because it is intended to
+use git to keep itself up to date.
+
+It depends upon crontab, unless the user aka admin intends
+to manually do all the various periodic chores this
+repo itself and all the things it would like to use if
+the are available and confured to be used want/need done
+periodically.
+
+It depends upon make, for sure, because that is how it
+plans to "make" things happen. The plan is that crotnab
+tells cron when to run make as well as telling cron when
+to run various other things depending upon configuration.
+
+Most likely cron will run make after doing a git pull,
+but might well run make at various other times, maybe
+(probably?) regularly as clockwork.
+
+It depends upon the command line interface (cli) Open
+Transactions client as a way of abstracting away all the
+many and varied cryptocurrences and token systems and
+so on that it would otherwise have to deal with directly
+itself and to avoid the problems inherent in having
+many users of the same machine all trying to access the
+same blockchain-based currencies.
+
+
+-----------------------------------------------------------
+OPTIONAL DEPENDENCIES
+-----------------------------------------------------------
+
+If all you want to do is interact with the economy of the
+Galactic Milieu without the overhead of actually getting
+involved more directly in the Milieu(s) whose economies
+you are interacting with by means of Open Transactions,
+I think we are done here.
+
+However, the Galactic Milieu includes Freeciv-based
+planets, so persons interested in one entire planet at a
+time scale, military units large enough to take ownership
+of an entire city with a single unit scale view of such
+planets, with the kinds of command and control tools
+persons controlling or attempting to control entire
+nations on such planets, potentially even having the
+entire planet under the control of one nation they and
+theirs control, Freeciv is a very useful client/tool.
+
+The scale at which Freeciv-based planets are represented
+is, however, rather huge for someone who prefers to
+walk around as a single individual on or off of planets.
+Crossfire RPG and Battle for Wesnoth are among the tools
+that have been put to use to provide more detailed,
+more individual or small party scaled views into the
+Milieu. Battle for Wesnoth is particularly useful for
+presenting historic views: views into the past of the
+Milieu.
+
+A Crossfire RPG web-launched java-based client can be
+used to access the "CrossCiv" server that should be
+listed on the list of servers its metaserver presents:
+
+http://invidious.meflin.net/crossfire/jxclient.jnlp
+
+===========================================================
