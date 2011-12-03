@@ -72,4 +72,39 @@ aspects of the Galact Milieu? Run it -or "simply read
 the code"- and see, AT YOUR OWN RISK, AFTER DOING YOUR
 OWN DUE DILIGENCE, if at all.
 
+------------------------------------------------------------
+
+What, you're still here? Okay, okay, here is the install
+plan-so-far...
+
+It will be expected at runtime that CONFIGURATION.inc
+will exist. It will be a file the admin changed and might
+change again, thus it is data that can vary, thus logically
+it probably should be someplace in /var if root access
+is used to install, and in $GM_VAR_DIR regardless.
+
+That might be too confusing for some wannabe-admins, so
+maybe initially / for now we will allow it to sit right
+here in the main dir of the repo; we will try to ensure
+the upstream will not trash it with some new version
+from up stream.
+
+We provide CONFIGURATION.distro as template or example
+and hope to encourage/guide admins to create their own
+CONFIGURATION.inc containing all the configuration
+settings set the way they want/like them.
+
+The main Makefile, once we start writing it, will be
+intended for use by crontab-regulated periodic make
+invocations, but in the event that CONFIGURATION.inc
+does not exist or some other catastrophe occurs, it
+should try to bring matters to the attention of the
+admin to get some human intervention to happen.
+
+Maybe the beast default thing for make to do if make
+is invoked manually before installing and configuring
+has been done might be to dump this INSTALL file out
+stdout or stderr as way to try to clue-in the user aka
+admin.
+
 ============================================================
