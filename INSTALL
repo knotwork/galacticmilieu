@@ -101,10 +101,62 @@ does not exist or some other catastrophe occurs, it
 should try to bring matters to the attention of the
 admin to get some human intervention to happen.
 
-Maybe the beast default thing for make to do if make
+Maybe the best default thing for make to do if make
 is invoked manually before installing and configuring
 has been done might be to dump this INSTALL file out
 stdout or stderr as way to try to clue-in the user aka
 admin.
+
+CRONTAB:
+
+I have started a home/gm directory as a sample/example
+dedicated-Galactic-Milieu-username's home directory.
+
+That lets me put a run-at-reboot.sh and any other
+scripts for that user's crontab to run where I normally
+put such scripts for any user: in their ~/cmds/ directory.
+
+
+PERMISSIONS and which user+group owns what:
+
+/usr/src/ still seems to be a/the common place for
+source code, but I leave such source in root's hands
+so actually that is not going to work for me as the
+the location of this install at runtime when the
+dedicate-user's crontab invokes git pull.
+
+Thus probably somewhere in /var, or somewhere in /home
+is where this "GitHub-only portion of the Galactic Milieu
+project" should be placed.
+
+The user whose crontab runs make in here, or whom a human
+admin logs in as or su's to to run make in here, must
+be able to do git pull in here to update the scripts etc.
+
+The general idea of using git though is so that actual
+application-data can be imported easily and conveniently
+by such means.
+
+Eventually therefore a separation of powers should be
+brought in, whereby the user used to do git pull of
+application-data need not have the power to change the
+code/scripts that are in here.
+
+That is part of why I have a var directory in here.
+Eventually the user whose cron keeps data up to date
+will not need to be able to write to any part of what
+is distributed in here other than var/galacticmilieu
+and home/gm (or /home/thatuser, whatever the username
+is that is used for that role).
+
+Beyond then we maybe can go back to the more normal kind
+of code/scripts disribution model, where such things only
+get installed by the trusted user who owns the source code
+in /usr/src and is used (via login or su) to do make
+install in such sourcecode directories.
+
+Basically this is starting out as a quick and dirty hack,
+but can be improved later if it actually works and anyone
+other than I actually wants to use any of it.
 
 ============================================================
