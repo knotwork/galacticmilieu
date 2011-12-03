@@ -1,0 +1,105 @@
+#!/bin/bash
+#
+# CONFIGURATION.distrib
+#
+# Sample configuration file, hopefully helpful in creating
+# local-machine configuration file, which latter we don't
+# want to over-write from upstream.
+#
+# WARNING! Notice we plan to run this as a shell script!
+#
+# For gosh sakes make sure it isn't planning to do something
+# you will regret! This file should only be setting shell
+# variables, that is all! No executing of stuff, any actual
+# executing will happen only in some other file it will
+# suck in way down near the bottom of this file!
+#
+
+#
+# Hostname to expect the command hostname to return:
+# used to decide whether we are actually running on
+# machine the actualy configuration is expecting to
+# run on / intended to run on:
+#
+GM_CONFIG_HOSTNAME=nosuchhostnamewehope
+
+
+#
+# User we expect to be when we use this config file:
+#
+GM_CONFIG_USERNAME=nosuchuserexistswehope
+
+
+#
+# User we expect to be if/when we use Crossfire:
+#
+GM_CONFIG_CROSSFIRE_USERNAME=crossfire
+
+
+#
+# Paths for Crossfire RPG
+#
+GM_CONFIG CROSSFIRE_SERVER_BINARY=/usr/bin/crossfire_server
+GM_CONFIG_FREECIV_CLIENT_BINARY=/usr/bin/crossfire_client
+
+
+#
+# User we expect to be if/when we use Freeciv:
+#
+GM_CONFIG_FREECIV_USERNAME=freeciv
+
+
+#
+# Paths for Freeciv
+#
+GM_CONFIG_FREECIV_SERVER_BINARY=/usr/bin/freeciv_server
+GM_CONFIG_FREECIV_CLIENT_BINARY=/usr/bin/freeciv_client
+
+
+#
+# Have we run ./configure yet?
+#
+GM_CONFIG_ALREADY_RAN_AUTOCONFIGURE=nosuchthingyet
+
+
+
+#
+# Have we set up crontab yet?
+#
+GM_CONFIG_ALREADY_SETUP_CRONTAB=notyet
+
+
+#
+# Have we set up a Crossfire RPG server yet?
+#
+GM_CONFIG_ALREADY_SETUP_CROSSFIRESERVER=notyet
+GM_CONFIG_SHALLWE_SETUP_CROSSFIRE=notmuchneedyet
+
+
+#
+# Have we set up a Freeciv server yet?
+#
+GM_CONFIG_ALREADY_SETUP_CIVSERVER=notyet
+GM_CONFIG_SHALLWE_SETUP_CIVSERVER=hopefullyso
+
+
+#
+# Have we set up an eggdrop IRC bot yet?
+#
+GM_CONFIG_ALREADY_SETUP_EGGDROPBOT=notyet
+GM_CONFIG_SHALLWE_SETUP_EGGDROPBOT=optional
+
+
+#
+# Have we set up {a|} webdir{|s} yet?
+#
+# It would be useful for other agents to be able to
+# pick up info somewhere. One option would be to have
+# a place on a webserver where stuff could be picked
+# up using http
+#
+GM_CONFIG_ALREADY_SETUP_HTTPDROP=notyet
+GM_CONFIG_SHALLWE_SETUP_HTTPDROP=optional
+GM_CONFIG_ALREADY_SETUP_HTTPSDROP=notyet
+GM_CONFIG_SHALLWE_SETUP_HTTPSDROP=optional
+
