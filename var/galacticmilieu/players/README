@@ -1,0 +1,32 @@
+============================================================
+README for var/galacticmilieu/players directory
+============================================================
+
+This is where we will stash info about players.
+
+------------------------------------------------------------
+
+WARNING!!! WARNING!!! WARNING!!! WARNING!!! WARNING!!!
+
+Some of the info we stash here will come from httpdrops
+and/or httpsdrops other players set up to leave data in
+for players interested in what they choose to "let drop"
+in such places.
+
+THUS WE MUST AT ALL TIMES BE VERY CAREFUL WHAT PLAYERS
+MANAGE TO INSINUATE INTO SUCH DATA.
+
+Even if we tried real hard not to pick up any nasties when
+picking up stuff drop drops, we might be well advised to
+do really good due diligence any time we thing about making
+use of such info too.
+
+Maybe we will do a var/spool type thing eventually for
+initial processing of players' drops, to try to only put
+in here safe info we have thoroughly vetted. But at time
+of writing that is/was not in place yet.
+
+
+WARNING!!! WARNING!!! WARNING!!! WARNING!!! WARNING!!!
+
+============================================================
