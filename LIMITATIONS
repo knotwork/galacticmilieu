@@ -1,0 +1,31 @@
+===========================================================
+LIMITATIONS of GitHub-only portion of Galactic Milieu
+===========================================================
+
+Unless we use encrypted messages/data, git is not really
+an ideal way of distributing data to each user that is
+tailored for that user.
+
+For example we can include general information that the
+universe at large has access to, but unless we encryt we
+cannot readily have entities who have no spies in a
+certain region be unable to get any reports from that
+region, stuff like that.
+
+It is best used for "broadcastable" data, and for that
+kind of data it has the virtue of being pulled by those
+who choose to pull it instead of being pushed to those
+who might prefer not to have it pushed at them.
+
+Furthermore, GitHub caters to open data; encrypting
+data so only certain parties can actually unencrypt
+certain parts of it, so as to use it as a carrier for
+messages targeted at specific nyms or something like that,
+would be an abuse of the service.
+
+Probably for that kind of thing we should have [at least
+some] nodes install not only git client but also git
+repos, where they can put in encypted form outgoing
+messages intended for specific other nodes to pull.
+
+===========================================================
