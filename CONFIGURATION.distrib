@@ -14,6 +14,33 @@
 # executing will happen only in some other file it will
 # suck in way down near the bottom of this file!
 #
+# NOTE: we lied, we actually plan to include it in
+# actual shell scripts, the bang-path is there just to
+# ring your alarm bells and the file deliberately does NOT
+# have its execute bit(s) set to try to hint to you NOT
+# to run it as a shell script.
+#
+# We actually plan to use 
+# . $GM_GITHUBREPO/CONFIGURATION.inc
+# (BUT NOT IN THIS FILE: it'll be in ones make invokes)
+#
+# to set a whole swathe of GM_CONFIG_* variables that
+# other scripts might well find handy to have correct
+# values in at runtime.
+#
+# SO, ADMIN, PLEASE USE THIS FILE AS TEMPLATE or EXAMPLE
+# to create your own CONFIGURATION.inc file to go in your
+# own $GM_CONFIG_GITHUB_REPO directory
+#
+# The repo is intended to NOT change your CONFIGURATION.inc
+# when doing git pulls and such, though someday maybe some
+# more automatic or hand-holding way of getting your
+# configuration file set up and populated with suitable
+# values for your purposes might evolve.
+#
+############################################################
+
+
 
 #
 # Hostname to expect the command hostname to return:
@@ -108,9 +135,12 @@ GM_CONFIG_SHALLWE_SETUP_OT_CLI=pleasedo
 GM_CONFIG_ALREADY_SETUP_OT_NYM=notyet
 if [ "$GM_CONFIG_SHALLWE_SETUP_OT_CLI"x == 'yes'x ]; then
 	GM_CONFIG_SHALLWE_SETUP_OT_NYM=yes
+	GM_CONFIG_OT_MYNYM=thenymyouhavesetuptouseinot
 else
 	GM_CONFIG_SHALLWE_SETUP_OT_NYM=cantyet
 fi
+
+
 
 #
 # Have we set up an eggdrop IRC bot yet?
@@ -131,4 +161,26 @@ GM_CONFIG_ALREADY_SETUP_HTTPDROP=notyet
 GM_CONFIG_SHALLWE_SETUP_HTTPDROP=optional
 GM_CONFIG_ALREADY_SETUP_HTTPSDROP=notyet
 GM_CONFIG_SHALLWE_SETUP_HTTPSDROP=optional
+
+
+#####################################################
+#
+# Above is far far far from finished but
+# after all the variables have been set above
+# we will honour the statement that this file
+# just sets values and executing stuff will be
+# delegated to some other file(s)...
+#
+# Thus below will will use . to suck in such file(s):
+#####################################################
+
+
+#
+# Might as well just suck in one file, letting it
+# decide what others might be needed based on all
+# config variables we already have set by now:
+#
+. $GM_GITREPO_DIR/CONFIGURATION.inc \
+	|| . $GM_GITREPO_DIR/manuallyeditconfig.inc
+
 
