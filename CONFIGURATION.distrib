@@ -84,6 +84,35 @@ GM_CONFIG_SHALLWE_SETUP_CIVSERVER=hopefullyso
 
 
 #
+# Have we set up Open Transactions cli yet?
+#
+# It is unsafe for multiple usernames to know
+# cryptocoin daemon rpc passwords, so we want to
+# use Open Transactions command line interface,
+# letting a Galactic Milieu Open Transactions
+# server take care of interfacing with the
+# cryptocoin networks for us.
+#
+GM_CONFIG_ALREADY_SETUP_OT_CLI=notyet
+GM_CONFIG_SHALLWE_SETUP_OT_CLI=pleasedo
+
+
+#
+# Have we set up primary Nym on OT server yet?
+#
+# We will want a Nym to be known to the Open
+# Transactions server by, under which to set
+# up various game-currency and crypto-coin
+# accounts.
+#
+GM_CONFIG_ALREADY_SETUP_OT_NYM=notyet
+if [ "$GM_CONFIG_SHALLWE_SETUP_OT_CLI"x == 'yes'x ]; then
+	GM_CONFIG_SHALLWE_SETUP_OT_NYM=yes
+else
+	GM_CONFIG_SHALLWE_SETUP_OT_NYM=cantyet
+fi
+
+#
 # Have we set up an eggdrop IRC bot yet?
 #
 GM_CONFIG_ALREADY_SETUP_EGGDROPBOT=notyet

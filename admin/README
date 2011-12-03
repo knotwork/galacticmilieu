@@ -1,0 +1,58 @@
+============================================================
+README for admin directory
+============================================================
+
+This is the directory the person running this install of
+this GitHub repo portion of Galactic Milieu will be using
+themselves. Bascially this stuff is for a human to be
+using, whereas outside of this directory cron pretty much
+runs the show.
+
+------------------------------------------------------------
+
+WARNING!!! WARNING!!! WARNING!!! WARNING!!! WARNING!!!
+
+
+Administration of the GitHub-repo portion of the Galactic
+Milieu is a know what you are doing kind of deal.
+
+Do your own due diligence. For example, don't run any
+scripts without reading them first yourself to see what
+it is that they intend to try to do and how they intend
+to try to do it, then decide whether you actually want
+them to make the attempt.
+
+
+
+WARNING!!! WARNING!!! WARNING!!! WARNING!!! WARNING!!!
+
+------------------------------------------------------------
+
+POSSIBLE BONUS!!! POSSIBLE BONUS!!! POSSIBLE BONUS!!!
+
+If you are interested in administrating an installed
+instance of the GitHub repo portion of the Galactic Milieu,
+be sure to investigate any DeVCoin bounties that might
+qualify you for.
+
+In general though, since nothing in this directory should
+get run without direct human oversight, the stuff in this
+directory should not be of any use until the configuration
+of the installation has been completed in the parent
+directory.
+
+POSSIBLE BONUS!!! POSSIBLE BONUS!!! POSSIBLE BONUS!!!
+
+------------------------------------------------------------
+
+That is to say, the stuff in here is of potential use to
+people who have gotten the stuff in the parent directory
+working. This directory does not contain config files
+consulted by the stuff above, nor scripts etc used by
+stuff above. It is for an admin who got all the stuff
+above configured and working and contains stuff that
+assumes all the configuring and setup the parent directory
+will hopefully try to guide them through has already been
+completed.
+
+============================================================
