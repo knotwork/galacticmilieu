@@ -60,4 +60,16 @@ that obviously must be first item on the roadmap.
 At time of writing I haven't started on that initial
 Makefile yet...
 
+(So the CONFIGURATION.distrib is maybe the most succinct
+overview/hint of what should be coming, as before starting
+on the Makefile I want to know that at runtime a whole
+swathe of configuation settings will be set indicating
+exactly which features are to be used which tools are to
+be used to implement them and so on - the decisions the
+admin / user made as to which parts, if any, to turn on
+or off and the "if this is set then that also will need
+to be set" decisions flowing from the admin's decisions.
+SO I am off to do more work on CONFIGURATION.distrib next
+I guess...)
+
 ============================================================
