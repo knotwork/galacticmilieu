@@ -69,4 +69,12 @@ listed on the list of servers its metaserver presents:
 
 http://invidious.meflin.net/crossfire/jxclient.jnlp
 
+
+ANONYMITY:
+
+You might prefer to operate via i2p or Tor or Freenet or
+you might not. Which if any such tools you prefer to use
+is up to you but each will be a depency if you configure
+this portion of the Galactic Milieu project to use it.
+
 ===========================================================
