@@ -1,0 +1,39 @@
+============================================================
+CONSPIRACY for GitHub-only portion of Galactic Milieu
+============================================================
+
+The author(s) of this crap must think we are total morons
+if they think we will have crontab automatically git pull
+anything that will get executed.
+
+So lets conspire to prevent execution of anything on our
+own machines that we didn't inspect for ourselves with due
+diligence before allowing it to be executed.
+
+This whole shebang can, to that end, stay in /usr/src
+owned by root, who can even make it unreadable by other
+users.
+
+We can hack the make routines to ensure ourselves that
+git pull on autpilot by other users actually only happens
+someplace in var or home, and only if nothing that is
+pulled in that way gets executed.
+
+We can fork the actual data-payload-carrying spots/dirs
+into a separate, or even various separate, git repos,
+for pulling totally separate from this code/scripts
+repo.
+
+Some version-synchronisation will be wanted to make sure
+we don't run old code/scripts on data that is for newer
+versions and might not work in older versions.
+
+In fact, part of the runtime data to be distributed should
+probably be reports as to which nodes are known to have
+upgraded to which versions of what, to help in deciding
+what versions of what kinds of data each node can process
+thus what kinds of data they might be interested in and/or
+we might be interested in helping them to become interested
+in.
+
+============================================================
