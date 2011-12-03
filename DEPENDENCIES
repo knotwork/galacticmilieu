@@ -44,14 +44,15 @@ you are interacting with by means of Open Transactions,
 I think we are done here.
 
 However, the Galactic Milieu includes Freeciv-based
-planets, so persons interested in one entire planet at a
-time scale, military units large enough to take ownership
-of an entire city with a single unit scale view of such
-planets, with the kinds of command and control tools
-persons controlling or attempting to control entire
-nations on such planets, potentially even having the
-entire planet under the control of one nation they and
-theirs control, Freeciv is a very useful client/tool.
+planets, so for persons interested in "one entire planet
+at a time with military units large enough to take
+ownership of an entire city/province with a single unit"
+scale view of such planets and the kinds of command and
+control tools persons controlling or attempting to control
+entire nations on such planets use (potentially even
+having the entire planet under the control of one nation
+they and theirs control, Freeciv is a very useful
+client/tool. http://freeciv.org/
 
 The scale at which Freeciv-based planets are represented
 is, however, rather huge for someone who prefers to
@@ -61,7 +62,7 @@ that have been put to use to provide more detailed,
 more individual or small party scaled views into the
 Milieu. Battle for Wesnoth is particularly useful for
 presenting historic views: views into the past of the
-Milieu.
+Milieu. http://wesnoth.org/
 
 A Crossfire RPG web-launched java-based client can be
 used to access the "CrossCiv" server that should be
@@ -74,7 +75,8 @@ ANONYMITY:
 
 You might prefer to operate via i2p or Tor or Freenet or
 you might not. Which if any such tools you prefer to use
-is up to you but each will be a depency if you configure
-this portion of the Galactic Milieu project to use it.
+is up to you but each will be a dependency if you
+configure this portion of the Galactic Milieu project to
+use it.
 
 ===========================================================
