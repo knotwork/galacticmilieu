@@ -1,0 +1,40 @@
+============================================================
+README for home/gm dir of GitHub-only portion of Galactic
+	Milieu project
+============================================================
+
+This is an example/sample homedirectory for a dedicated
+Galactic Milieu user (whose username need not be "gm").
+
+Such a user would be the one whose crontab is used to
+run the cron tasks for example.
+
+It should not be the same user that runs your Open
+Transactions server if you run such a server, and probably
+just on general principles probably should not even be the
+one that runs your Crossfire RPG server if you run such a
+server nor the one that runs your Freeciv server if you
+run such a server.
+
+------------------------------------------------------------
+
+Personally I have developed the custom of having a
+run-at-reboot.sh script for each user that has stuff that
+should be fired up by that user at boot/reboot. I use their
+~/cmds/ directory to keep such scripts in.
+
+I also tend to make them normal users instead of trying to
+put their homedir somewhere less normal than /home/username
+because I give them a normal shell. I had myt crossfire
+user set to use /var/games/crossfire as its home directory
+and when I got around to giving that user a normal shell
+so I could log in as that user to do development as that
+user I noticed it got an error trying to cd into its
+homedirectory at login.
+
+Thus on migrating to my new machine with newer version
+of Fedora Core on it (I am on Fedora Core 15 as I write)
+I created a normal user named crossfire so that error at
+human login would no longer disturb my wah.
+
+============================================================
