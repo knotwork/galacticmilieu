@@ -1,0 +1,105 @@
+============================================================
+PURPOSE for GitHub-only portion of Galactic Milieu project
+============================================================
+
+This is a Git repository for a project much of which already
+exists on SourceForge.
+
+THIS IS NOT A COPY OF WHAT IS ON SOURCEFORGE.
+
+This will be assuming cron will be running "make"
+periodically and "make" will figure out, largely from last
+modified dates of files as is normal for "make", what to
+actually do (such as git pull and/or svn up...)
+
+WARNING!!! WARNING!!! WARNING!!! WARNING!!! WARNING!!!
+
+Does that sound safe/secure to you?!?!?!
+
+If so, please think again and/or harder!
+
+It is not! It is stupid to run this crap! Are you out of
+your mind!?!?!
+
+Oh sure I run it, why the heck not, I write it. Oh wait,
+no, I DO NOT RUN IT! Some other username on one of my
+machines runs it. A disempowered user. Nonetheless, even
+a disempowered user can do while fork or not fork fork
+or other trivial infinite loops to eat system resources.
+
+So don't run this crap, use it as inspiration to run
+your part of the project your way or something and don't
+blame me if you don't like what it does.
+
+WARNING!!! WARNING!!! WARNING!!! WARNING!!! WARNING!!!
+
+------------------------------------------------------------
+
+Surely is it obvious at a glance that the purpose is to
+take control of your computer, or at least one user on your
+computer. ;) :D
+
+It is all part of Tux and Tuxette's implementation of
+their part in carrying out the Grand Plan of Linus (GPL):
+taking over the world.
+
+The rest is mere implementation details. :)
+
+This GitHub-only portion of the Galactic Milieu project
+exists for the purpose of distributing information to
+(and probably among) a distributed / federated network of
+nodes at runtime. Toward that end, it is currently being
+used to distribute infrastructure items aimed at providing
+some purpose to distributung information at runtime.
+
+By that I mean there is not much point distributing
+application / federation data if no infrastructure such
+as code and scripts exists at the nodes. Without stuff
+that makes use of the distributable data there is little
+demand for the data.
+
+So the current-stage purpose is to get installed at the
+nodes stuff that will actually have some use for the kinds
+of data that we figure on having nodes grab using git
+at runtime.
+
+If we look at the Galactic Milieu as if it were a game or
+a milieu of multiple games, we can regard the kind of data
+we plan on pulling at runtime as things like intergalactic
+news and espionage reports, reports from starships
+our players might have "out there somewhere" on missions,
+economy reports about worlds other than such worlds as
+we might ourselves be hosting on our own machine... stuff
+like that.
+
+If we look at the Galactic Nexus Uberplan (GNU) as an
+overarching plan to navigate and/or manipulate timelines
+toward some specific Temporal Nexus, that might bring
+to mind distributing such data was what military forces
+are deployed where, by whom, and what technologies they
+are known to have access to, and stuff like that.
+
+For example, what would a Freeciv presentation of the
+current deployment of technologies and military units on
+Sol III look like? A "modern Earth" scenario for Freeciv,
+in effect, that is.
+
+Freeciv could be used as a sktchpad to sketch out theories
+ideas plans etc about any planet. DIstributing such a tool
+under the guise of a game is a part of the Galactic Nexus
+Uberplan that some GNUites apparently imagine to be quite
+clever.
+
+Of course we could set up UUCP+USENET software on nodes
+to distribute info, it just so happens that this GitHub-
+only portion of the Galactic Milieu project chooses to use
+git itself, being as how those who have downloaded a
+GitHub-only repo might well turn out to already have git
+installed.
+
+A lot of the overall purpose is, of course, to have fun.
+
+Characterising it all as games or a game might help to
+accomplish that, who knows? Lets give it a whirl and see.
+
+============================================================
