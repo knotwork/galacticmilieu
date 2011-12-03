@@ -1,0 +1,26 @@
+============================================================
+SECURITY for GitHub-only portion of Galactic Milieu
+============================================================
+
+AT SOME POINT we should separate getting the latest news
+about what is going on out in the Milieu on other machines
+from keeping this code up to date.
+
+Currently though, getting code up to date is pretty much
+the top item on the agenda out in the Milieu, partly
+because we do not yet have code for cron / crontab to
+actually use to keep up to date with other happenings out
+in the Milieu.
+
+Having this automatic updating of this code happening
+will hopefully allow code for getting news about other
+types of activities going on out there to get here and
+get run.
+
+Open Transactions is supposed to be used for transaction
+processing, as that gets integrated more and more its
+own security, which is intended to be quite good, should
+help us evolve toward better and better security over
+the coming timespans.
+
+============================================================
