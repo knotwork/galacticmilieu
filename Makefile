@@ -1,4 +1,5 @@
 
+include CONFIGURATION.inc
 
 all: modules
 
