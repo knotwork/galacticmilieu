@@ -53,3 +53,7 @@ fi
 # does something or admin already told crontab to do
 # something...
 #
+
+exit 1
+
+

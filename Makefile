@@ -1,14 +1,13 @@
 
 
-all: CONFIGURATION.inc Makefile modules
+all: modules
 
 CONFIGURATION.inc:
 	bash manuallyeditconfig.inc
 
-Makefile:
+Makefile: CONFIGURATION.inc
 	git pull
-	touch Makefile
 
 modules: Makefile
 	cd modules; make
-
+	touch Makefile
