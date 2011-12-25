@@ -47,7 +47,7 @@ However, the Galactic Milieu includes Freeciv-based
 planets, so for persons interested in "one entire planet
 at a time with military units large enough to take
 ownership of an entire city/province with a single unit"
-scale view of such planets and the kinds of command and
+scale view of such planets, and the kinds of command and
 control tools persons controlling or attempting to control
 entire nations on such planets use (potentially even
 having the entire planet under the control of one nation
@@ -78,5 +78,11 @@ you might not. Which if any such tools you prefer to use
 is up to you but each will be a dependency if you
 configure this portion of the Galactic Milieu project to
 use it.
+
+DROPBOX:
+
+One possible venue for sharing files and/or for offsite
+backups is dropbox. TO make use of dropbox you will need
+to set up their daemon and an associated dropbox account.
 
 ===========================================================

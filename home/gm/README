@@ -25,7 +25,7 @@ should be fired up by that user at boot/reboot. I use their
 
 I also tend to make them normal users instead of trying to
 put their homedir somewhere less normal than /home/username
-because I give them a normal shell. I had myt crossfire
+because I give them a normal shell. I had my crossfire
 user set to use /var/games/crossfire as its home directory
 and when I got around to giving that user a normal shell
 so I could log in as that user to do development as that
