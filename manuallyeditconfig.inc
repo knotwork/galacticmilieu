@@ -19,13 +19,13 @@ echo '!! to whatever values they wish their installation of'
 echo '!! this GitHub repo portion of the Galactic Milieu'
 echo '!! to use on this machine it is trying to run on now.'
 echo
-echo '--> Please bring the !! parts above to admin's eyes!'
+echo "--> Please bring the !! parts above to admin's eyes!"
 echo
 echo 'This file, manuallyeditconfig.inc, cannot really do'
 echo 'anything about this state of affairs other than try'
 echo 'to get it brought to the attention of an admin.'
 echo
-echo 'It doesn't even know whether the admin would mind'
+echo "It doesn't even know whether the admin would mind"
 echo 'having git pull called at this point, nor even'
 echo 'whether git itself is currently installed or'
 echo 'intended by the admin to be installed.'
@@ -38,16 +38,18 @@ echo
 #
 # Admin: its up to you, wanna try that here?
 # 
-# If so maybe it'd look something like the following,
-# except it wouldn't be commented-out:
+# If so set GM_CONFIG_MANUALLYEDIT_TRIES_PULL
+# in CONFIGURATION.inc
 #
 
-# git pull
-
+if [ "GM_CONFIG_MANUALLYEDIT_TRIES_PULL"x == 'yes'x ]; then
+  git pull
+fi
 
 #
 # If crontab has been set up we can hope the whole try
 # to run idea will get tried again sometime by cron
-# so we are done for now, its admin does something
-# or admin already told crontab to do something...
+# so we are done for now, its now down to either admin
+# does something or admin already told crontab to do
+# something...
 #

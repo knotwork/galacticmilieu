@@ -52,6 +52,12 @@ GM_CONFIG_HOSTNAME=nosuchhostnamewehope
 
 
 #
+# Path of this github repo
+#
+GM_GITREPO_DIR=/usr/src/galacticmilieu-github
+
+
+#
 # User we expect to be when we use this config file:
 #
 GM_CONFIG_USERNAME=nosuchuserexistswehope
@@ -162,8 +168,27 @@ GM_CONFIG_SHALLWE_SETUP_HTTPDROP=optional
 GM_CONFIG_ALREADY_SETUP_HTTPSDROP=notyet
 GM_CONFIG_SHALLWE_SETUP_HTTPSDROP=optional
 
+#
+# Shortly we will try to suck in the real config,
+# or request that it be manually created/editted.
+# Here we set whether we will try a git pull in
+# the manuallyeditconfig.inc script as a possible
+# workaround to help lower admin workload.
+#
+#
+GM_CONFIG_MANUALLYEDIT_TRIES_PULL=ifadminsetsthisyes
 
-#####################################################
+
+#
+# The real config file will not	be wanting to suck
+# itself into itself, so we need to be able to tell
+# whether this is the .distrib version or the real
+# CONFIGURATION.inc
+#
+GM_CONFIG_THIS_IS_REAL_CONFIGURATION=AdminMUSTset
+
+
+############################################################
 #
 # Above is far far far from finished but
 # after all the variables have been set above
@@ -172,15 +197,19 @@ GM_CONFIG_SHALLWE_SETUP_HTTPSDROP=optional
 # delegated to some other file(s)...
 #
 # Thus below will will use . to suck in such file(s):
-#####################################################
-
+############################################################
 
 #
 # Might as well just suck in one file, letting it
 # decide what others might be needed based on all
 # config variables we already have set by now:
 #
-. $GM_GITREPO_DIR/CONFIGURATION.inc \
+
+if [ "GM_CONFIG_THIS_IS_REAL_CONFIGURATION"x != 'yes'x"] then
+  . $GM_GITREPO_DIR/CONFIGURATION.inc \
 	|| . $GM_GITREPO_DIR/manuallyeditconfig.inc
+fi
 
-
+############################################################
+End of CONFIGURATION.distrib (add below only in the .inc)
+############################################################
